@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"notebook.formatOnSave.enabled": true,
+		"workbench.tree.indent": 20,
+		"editor.formatOnSave": true,
+		"python.terminal.executeInFileDir": true
+	}
+}
