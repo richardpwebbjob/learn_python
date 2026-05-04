@@ -1,8 +1,10 @@
+# app_apis.py: weather API request and temperature conversion
 import requests
 
     
 
 
+# Coordinates for the weather query
 longitude = 2.35
 latitude =48.85
 
@@ -11,6 +13,7 @@ longitude= -112.073891
 
 # temperature = 50
 
+# Build the API URL for the current weather
 url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m"
 
 print(url)

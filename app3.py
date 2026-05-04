@@ -1,3 +1,4 @@
+# app3.py: string examples and slicing
 course = "Python \nProgramming"
 print(len(course))
 print(course[0])

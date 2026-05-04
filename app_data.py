@@ -1,3 +1,4 @@
+# app_data.py: fetch weather data, build DataFrame, and save output
 import pandas as pd
 import matplotlib.pyplot as plt
 import os

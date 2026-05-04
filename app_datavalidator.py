@@ -1,3 +1,4 @@
+# app_datavalidator.py: data validation utility with error tracking
 class DataValidator:
     def __init__(self):
         self.errors = []

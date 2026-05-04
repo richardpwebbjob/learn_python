@@ -1,3 +1,4 @@
+# app6.py: math imports and numeric conversion
 import math
 
 print(10 +3)

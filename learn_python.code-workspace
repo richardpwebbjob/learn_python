@@ -9,6 +9,7 @@
 		"workbench.tree.indent": 20,
 		"editor.formatOnSave": true,
 		"python.terminal.executeInFileDir": true,
-		"editor.defaultFormatter": "charliermarsh.ruff"
+		"editor.defaultFormatter": "charliermarsh.ruff",
+		"debugpy.showPythonInlineValues": true
 	}
 }

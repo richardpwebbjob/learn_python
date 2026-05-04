@@ -1,3 +1,4 @@
+# app10.py: list creation and manipulation
 age = 25
 has_license = False
 my_list = ["Alice", 25, age, True, has_license]

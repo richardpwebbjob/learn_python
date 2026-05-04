@@ -1,3 +1,4 @@
+# app12.py: set creation and printing
 empty_set = set()
 
 numbers = {1,2,3,4,5}

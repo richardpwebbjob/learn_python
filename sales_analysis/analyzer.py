@@ -1,3 +1,4 @@
+# sales_analysis/analyzer.py: read sales data and export summaries
 import pandas as pd
 import os
 import json

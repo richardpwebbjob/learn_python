@@ -1,5 +1,6 @@
 # analyzer.py
 import pandas as pd
+# Import helper functions from sales_analysis/helpers.py
 from helpers import calculate_total, format_currency
 
 # Read data

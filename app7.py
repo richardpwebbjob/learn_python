@@ -1,3 +1,4 @@
+# app7.py: boolean and arithmetic examples
 name = "Alice"
 
 name = "Dave"

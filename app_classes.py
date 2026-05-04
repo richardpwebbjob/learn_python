@@ -1,3 +1,4 @@
+# app_classes.py: Dog class examples
 class Dog:
     def __init__(self, name, breed):
         self.name = name

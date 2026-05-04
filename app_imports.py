@@ -1,3 +1,4 @@
+# app_imports.py: module imports and basic usage examples
 import math
 print(math.sqrt(16))
 

@@ -1,7 +1,10 @@
+# app_readapikey.py: load environment variables from .env and print values
 import os
 
+# Use dotenv to load environment variables from a .env file
 from dotenv import load_dotenv
 
+# Load the .env file into the environment
 load_dotenv()
 
 

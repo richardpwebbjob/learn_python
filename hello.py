@@ -1,3 +1,4 @@
+# hello.py: external API call and temperature condition check
 import requests
 
 response = requests.get("https://api.github.com")

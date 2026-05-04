@@ -1,3 +1,4 @@
+# app_apiconfig.py: API configuration class and examples
 class APIConfig:
     def __init__(self, api_key, model="gpt-3.5-turbo", max_tokens=100):
         self.api_key = api_key
