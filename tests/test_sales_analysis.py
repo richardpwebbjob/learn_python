@@ -1,5 +1,6 @@
 import pathlib
 import tempfile
+import pytest
 from unittest.mock import mock_open, patch
 
 from tests.test_utils import run_script
@@ -38,6 +39,20 @@ def test_analyzer_script_runs_safely():
             patchers=patchers,
         )
         assert module["data_path"] == "data/sales.csv"
+
+
+def test_analyzer_script_missing_data():
+    patchers = [
+        patch("os.path.exists", return_value=False),
+    ]
+    with tempfile.TemporaryDirectory() as tmp:
+        with pytest.raises(FileNotFoundError):
+            run_script(
+                ROOT / "sales_analysis/analyzer.py",
+                cwd=pathlib.Path(tmp),
+                patchers=patchers,
+            )
+        # Triggers the else branch
 
 
 def test_analyzer2_script_runs_safely():

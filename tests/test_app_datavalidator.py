@@ -13,3 +13,12 @@ def test_data_validator_reports_errors():
     errors = validator.get_errors()
     assert "Invalid email: bad-email" in errors
     assert "Invalid age: 200" in errors
+
+
+def test_data_validator_valid_inputs():
+    # Run a fresh script to get a new validator
+    module = run_script(ROOT / "app_datavalidator.py")
+    validator = module["validator"]
+    assert validator.validate_email("test@example.com") is True
+    assert validator.validate_age(25) is True
+    # Note: the script adds errors, so get_errors() is not empty, but the validates work
